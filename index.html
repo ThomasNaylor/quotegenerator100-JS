@@ -1,0 +1,52 @@
+<!--
+-  QuoteGeneratorJS v1.0
+-   Thomas Naylor
+-
+-   Demonstration of an API call and updating the DOM using Ajax in plain JavaScript
+-   API: https://talaikis.com/api/quotes/random/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>template</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="icons/fav.png">
+  <link href="css\cssreset.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+  <link href="css\style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <div class="quotebox">
+      <!-- start header -->
+      <div class="header">
+        <div class="quote__header">
+          <h1>Quote Card</h1>
+        </div>
+      </div>
+      <!-- end header -->
+
+      <!-- start content -->
+      <div class="content">
+        <p id="quote__text"></p>
+        <p id="author__text"></p>
+      </div>
+      <!-- end content -->
+
+      <!-- start footer -->
+      <div class="footer">
+        <div class="next__button" id="next__button">Next</div>
+        <div class="next__button">
+            <a id="twitter" href="#" target="_blank">Share</a>
+        </div>
+        <div class="next__button" id="back__button">Back</div>
+      </div>
+      <!-- end footer -->
+    </div>
+  </div>
+<!-- start scripts -->
+<script src="js\functions.js" rel="javascript" type="text/javascript"></script>
+<!-- end scripts -->
+</body>
+</html>

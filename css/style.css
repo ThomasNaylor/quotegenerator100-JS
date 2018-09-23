@@ -1,0 +1,95 @@
+/*
+*   QuoteGeneratorJS v1.0
+*   Thomas Naylor
+*
+*   Demonstration of an API call and updating the DOM using Ajax in plain JavaScript
+*   API: https://talaikis.com/api/quotes/random/
+*/
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(to right, #3298db, #bdc3c7);
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 { font-size: 3.0rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 2.4rem; }
+h4 { font-size: 2.0rem; }
+h5 { font-size: 1.8rem; }
+h6 { font-size: 1.6rem; }
+p { font-size: 1.4rem; }
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quotebox {
+  min-height: 300px;
+  min-width: 320px;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to right, #3498db , #bdc3c7);
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.header {
+  display: flex;
+  text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.quote__header {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content p {
+  margin: 10px;
+  text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.content #author__text {
+  font-style: italic;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+.footer .next__button {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  padding: 5px 20px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color: white;
+}
+.footer .next__button a {
+    text-decoration: none;
+    color: white;
+}
